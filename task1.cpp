@@ -1,21 +1,20 @@
 #include <iostream>
-void userInput();
-int max(int FirstNumber, int SecondNumber);
-void outputAnswer(int MaxNumber);
-int main() {
-    userInput();
+
+using namespace std;
+
+int main()
+{
+    int number_one, number_two;
+    cin >> number_one >> number_two; 
+
+    if (number_one > number_two)
+    {
+        cout << number_one;
+    }
+    else
+    {
+        cout << number_two;
+    }
+
     return 0;
-}
-void userInput() {
-    int FirstNumber;
-    int SecondNumber;
-    std::cin >> FirstNumber >> SecondNumber;
-    outputAnswer(max(FirstNumber, FecondNumber));
-}
-int max(int firstNumber, int secondNumber) {
-    if (FirstNumber >= SecondNumber) return FirstNumber;
-    else return SecondNumber;
-}
-void outputAnswer(int MaxNumber) {
-    std::cout << MaxNumber;
 }
